@@ -28,7 +28,7 @@ export const schemaUsernameIntakeEmailDriverFactory = defineIntakeEmailDriver(
 
         let emailIdentifier = uniqueIdentifierSchema;
 
-        // {{username}}, {{random-digits}}, {{organization-id}}, {{organization-name}}
+        // Identifiers: {{username}}, {{random-digits}}, {{organization-id}}, {{organization-name}}
         const { username } = getEmailUsername({ email: userHint.email });
         emailIdentifier = emailIdentifier.replace(
           '{{username}}',
